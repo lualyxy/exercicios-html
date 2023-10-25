@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { font: 12pt Arial;}
+        button { font-size: 12pt; padding: 30px;}
+    </style>
+</head>
+<body>
+    <h1>calculos com js</h1>
+    <button onclick="calcular()">calcular</button>
+    <selection id="result">
+        <p>resultado:</p>
+    </selection>
+    <script>
+        function calcular () {
+            let num = Number(window.prompt (`numero`)) 
+            let res = document.querySelector(`selection#result`)
+            res.innerHTML = `<p>o numero a ser analisado ${num}</p>` 
+            res.innerHTML += `<p>o numero absoluto é ${Math.abs(num)}</p>` 
+            res.innerHTML += `<p>a sua parte inteira é ${Math.trunc(num)}</p>` 
+            res.innerHTML += `<p>o valor inteiro mais proximo é ${Math.round(num)}</p>` 
+            res.innerHTML += `<p>a raiz cubica é ${Math.sqrt(num)}</p>` 
+            res.innerHTML += `<p>sua raiz cubica é ${Math.cbrt(num)}</p>`
+            res.innerHTML += `<p>o valor de ${num} <sup>2</sup> é ${Math.pow(num,2)} </p>` 
+            res.innerHTML += `<p>o valor de ${num} <sup>3</sup> é ${Math.pow(num,3)}</p>` 
+        }
+    </script>
+    
+</body>
+</html>

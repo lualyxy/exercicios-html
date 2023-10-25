@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>numeros com js</title>
+    <style>
+        body { font: 12pt Arial;}
+        button { font-size: 12pt; padding: 30px;}
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com numeros</h1>
+    <button onclick="calcular()">Clique para calcular</button>
+    <section id="res">
+        <p>O resultado vem aqui...</p>
+    </section>
+
+    <script>
+        let n1 = Number(window.prompt("Digite um numero: 1"))
+        let res = document.querySelector('section#res')
+
+        res.innerHTML = `<p>O dobro de ${n1} é ${n1*2} e a metade de ${n1/2}!</p>`
+    </script>
+    
+</body>
+</html>
